@@ -12,42 +12,90 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: "console.log (0.1 + 0.2 == 0.3) " ,
+        choice1: 'true',
+        choice2: 'false',
+        choice3: 'NaN',
+        choice4: 'undefined',
         answer: 2,
     },
     {
         question:
-            "The tallest building in the world is located in which city?",
-        choice1: "Dubai",
-        choice2: "New York",
-        choice3: "Shanghai",
-        choice4: "None of the above",
+            'console.log (1 +  "2" + "2")',
+        choice1: "122",
+        choice2: "32",
+        choice3: "NaN2",
+        choice4: "NaN",
         answer: 1,
     },
     {
-        question: "What percent of American adults believe that chocolate milk comes from brown cows?",
-        choice1: "20%",
-        choice2: "18%",
-        choice3: "7%",
-        choice4: "33%",
+        question: 'console.log(0==")',
+        choice1: "true",
+        choice2: "false",
+        choice3: "undefined",
+        choice4: "NaN",
         answer: 3,
     },
     {
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
-        choice1: "10-20%",
-        choice2: "5-10%",
-        choice3: "15-20%",
-        choice4: "30%-40%",
+        question: "console.log(3 > 2 > 1)",
+        choice1: "undefined",
+        choice2: "NaN",
+        choice3: "false",
+        choice4: "true",
+        answer: 3,
+    },
+    {
+        question: "console.log(typeof typeof 1)",
+        choice1: "true",
+        choice2: "Number",
+        choice3: "1",
+        choice4: "string",
+        answer: 4,
+    },
+    {
+        question: "console.log(!0)",
+        choice1: "0",
+        choice2: "1",
+        choice3: "false",
+        choice4: "true",
+        answer: 4,
+    },
+    {
+        question: "console.log(20e-1['toString'](2))",
+        choice1: "2",
+        choice2: "10",
+        choice3: "undefined",
+        choice4: "20",
         answer: 2,
+    },
+    {
+        question: "console.result='2020'-'2021'",
+        choice1: "Null",
+        choice2: "undefined",
+        choice3: "10",
+        choice4: "1",
+        answer: 3,
+    },
+    {
+        question: "console.log(0.1+0.2==0.3)",
+        choice1: "true",
+        choice2: "undefined",
+        choice3: "false",
+        choice4: "Null",
+        answer: 1,
+    },
+    {
+        question: "console.log(2**2**3)",
+        choice1: "12",
+        choice2: "16",
+        choice3: "128",
+        choice4: "256",
+        answer: 4,
     }
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const MAX_QUESTIONS = 10
 
 startGame = () => {
     questionCounter = 0
